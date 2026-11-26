@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'MiSans'; /* 为字体定义一个唯一的名称 */
+    src: url('MiSansVF.ttf') format('truetype');
+}
+
+:root {
+	--main_color: rgb(23, 224, 255);
+	--background_color: rgb(71, 70, 70);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: whitesmoke;
+	transition: all ease-in-out 0.2s;
+	font-family: 'MiSans';
+	font-weight: normal;
+}
+
+.title {
+	font-size: 5vh;
+}
+
+.title::before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	background-color: var(--main_color);
+	width: 10px;
+	height: 5vh;
+	transform: translateY(5px);
+	left: 0%;
+}
+
+.header {
+	padding: 4px;
+	background-color: var(--background_color);
+	height: 4rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 12px 0px;
+}
+
+.msg {
+	padding: 8px;
+	background-color: var(--background_color);
+	position: relative;
+	box-shadow: 4px 4px var(--main_color);
+}
+
+.bottom {
+	background-color: var(--background_color);
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+}
+
+.bottom-content {
+	padding: 8px;
+}
+
+.bottom-content-icon-area {
+	display: flex;
+	gap: 2px;	
+	text-align: center;
+}
+
+#bottom-content-icon {
+	width: 32px;
+}
